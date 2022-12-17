@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=PT+Serif:wght@400;700&family=Poppins:wght@400;600&display=swap");
+
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'PT Serif', serif; */
+:root {
+    --font-montserrat: "Montserrat", sans-serif;
+    --font-poppins: "Poppins", sans-serif;
+    --font-ptSerif: "PT Serif", serif;
+    --color-grey: #a9a9a9;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 110px 240px 24px 240px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header {
+    display: flex;
+    margin-bottom: 95px;
+}
+
+img {
+    width: 238px;
+    height: 341px;
+}
+
+.header-title {
+    width: 100%;
+    font-family: var(--font-ptSerif);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: -0.045em;
+}
+
+.header-body {
+    width: 100%;
+    font-family: var(--font-poppins);
+}
+
+.header-subtitle {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+}
+
+.header-text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+}
+
+main {
+    margin-bottom: 115px;
+}
+
+.members-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.member-container {
+    display: flex;
+}
+
+.member-container:nth-of-type(2),
+.member-container:nth-of-type(5) {
+    margin-top: 70px;
+}
+
+figcaption {
+    font-family: var(--font-poppins);
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+}
+
+.member-position {
+    writing-mode: vertical-rl;
+    font-family: var(--font-ptSerif);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+footer p {
+    font-family: var(--font-montserrat);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: var(--color-grey);
+    text-align: center;
+}
+
+@media screen and (max-width: 375px) {
+    body {
+        padding: 71px 18px 24px 12px;
+    }
+
+    header {
+        flex-direction: column;
+        gap: 38px;
+        margin-bottom: 38;
+    }
+
+    img {
+        width: 139px;
+        object-fit: cover;
+    }
+
+    main {
+        margin-bottom: 134px;
+    }
+
+    .member-container:nth-of-type(even) {
+        margin-top: 70px;
+    }
+
+    .member-container:nth-of-type(5) {
+        margin-top: 0;
+    }
+
+    figcaption {
+        font-size: 14px;
+        line-height: 21px;
+    }
+
+    .member-position {
+        font-size: 10px;
+        line-height: 13px;
+    }
+}
